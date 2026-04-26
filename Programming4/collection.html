@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Collection - AstroLog</title>
+    <link rel="stylesheet" href="collection.css">
+</head>
+
+<body>
+    <header>
+        <div class="Logo">AstroLog</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="observations.html">Observations</a>
+            <a href="collection.html">My Collection</a>
+        </nav>
+        <input type="text" placeholder="search">
+        <div id="userControls"></div>
+    </header>
+
+    <main>
+        <div class="collection-header">
+            <div>
+                <h1 class="page-title">My Collection</h1>
+                <p class="page-subtitle">Your personal astronomy observation collection</p>
+            </div>
+            <div class="header-actions">
+                <button id="printBtn" class="print-btn" onclick="printCollection()">
+                    🖨 Print as PDF
+                </button>
+                <button id="clearBtn" class="clear-btn" onclick="clearCollection()">
+                    🗑 Clear All
+                </button>
+            </div>
+        </div>
+
+        <div id="emptyState" class="empty-state" style="display:none;">
+            <div class="empty-icon">🔭</div>
+            <h2>Your collection is empty</h2>
+            <p>Browse observations and click "Add to Collection" to start building your collection.</p>
+            <a href="observations.html" class="browse-btn">Browse Observations</a>
+        </div>
+
+        <div id="collectionGrid" class="collection-grid"></div>
+
+        <!-- Print View -->
+        <div id="printView" class="print-view">
+            <div class="print-header">
+                <h1>AstroLog — My Observation Collection</h1>
+                <p id="printDate"></p>
+            </div>
+            <div id="printContent"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sky Observations | Created for University of Oulu Coursework</p>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="collection.js"></script>
+</body>
+</html>

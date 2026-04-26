@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sky Observations - AstroLog</title>
+    <link rel="stylesheet" href="observations-style.css">
+</head>
+
+<body>
+    <header>
+        <div class="Logo">AstroLog</div>
+        <nav>
+            <a href="home.html"> Home </a>
+            <a href="observations.html"> Observations </a>
+            <a href="#"> My Profile </a>
+        </nav>
+        <input type="text" placeholder="search">
+        <div id="userControls">
+        </div>
+    </header>
+
+    <main>
+        <div class="top-bar">
+            <h1 class="page-title">All Observations</h1>
+            <button id="addNewBtn" class="add-new-btn">+ Add New Observation</button>
+        </div>
+        
+        <div class="card-grid" id="cardGrid">
+    <!-- 静态观测卡片 -->
+    <a href="observations/observation1.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Andromeda Galaxy.png" alt="Andromeda Galaxy">
+        </div>
+        <div class="card-content">
+            <h3>Andromeda Galaxy</h3>
+            <p class="observer">Observer: Jenny</p>
+            <p class="location">Oulu, Finland</p>
+        </div>
+    </a>
+
+    <a href="observations/observation2.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Triangulum Galaxy.png" alt="Triangulum Galaxy">
+        </div>
+        <div class="card-content">
+            <h3>Triangulum Galaxy</h3>
+            <p class="observer">Observer: Maria</p>
+            <p class="location">Rovaniemi, Finland</p>
+        </div>
+    </a>
+
+    <a href="observations/observation3.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Whirlpool Galaxy.png" alt="Whirlpool Galaxy">
+        </div>
+        <div class="card-content">
+            <h3>Whirlpool Galaxy</h3>
+            <p class="observer">Observer: Liam</p>
+            <p class="location">Tampere, Finland</p>
+        </div>
+    </a>
+
+    <a href="observations/observation4.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Sombrero Galaxy.png" alt="Sombrero Galaxy">
+        </div>
+        <div class="card-content">
+            <h3>Sombrero Galaxy</h3>
+            <p class="observer">Observer: Emma</p>
+            <p class="location">Helsinki, Finland</p>
+        </div>
+    </a>
+
+    <a href="observations/observation5.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Pinwheel Galaxy .png" alt="Pinwheel Galaxy">
+        </div>
+        <div class="card-content">
+            <h3>Pinwheel Galaxy</h3>
+            <p class="observer">Observer: Noah</p>
+            <p class="location">Kuopio, Finland</p>
+        </div>
+    </a>
+
+    <a href="observations/observation6.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Black Eye Galaxy.png" alt="Black Eye Galaxy">
+        </div>
+        <div class="card-content">
+            <h3>Black Eye Galaxy</h3>
+            <p class="observer">Observer: Olivia</p>
+            <p class="location">Truku, Finland</p>
+        </div>
+    </a>
+
+    <a href="observations/observation7.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Bode's Galaxy.png" alt="Bode's Galaxy">
+        </div>
+        <div class="card-content">
+            <h3>Bode's Galaxy</h3>
+            <p class="observer">Observer: Ava</p>
+            <p class="location">Oulu, Finland</p>
+        </div>
+    </a>
+
+    <a href="observations/observation8.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Centaurus A.png" alt="Centaurus A">
+        </div>
+        <div class="card-content">
+            <h3>Centaurus A</h3>
+            <p class="observer">Observer: Ethan</p>
+            <p class="location">Sydney, Australia</p>
+        </div>
+    </a>
+
+    <a href="observations/observation9.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Cigar Galaxy.jpg" alt="Cigar Galaxy">
+        </div>
+        <div class="card-content">
+            <h3>Cigar Galaxy</h3>
+            <p class="observer">Observer: Lucas</p>
+            <p class="location">Jyväskylä, Finland</p>
+        </div>
+    </a>
+
+    <a href="observations/observation10.html" class="observation-card">
+        <div class="card-image">
+            <img src="image/Large Magellanic Cloud.png" alt="Large Magellanic Cloud">
+        </div>
+        <div class="card-content">
+            <h3>Large Magellanic Cloud</h3>
+            <p class="observer">Observer: Sofia</p>
+            <p class="location">Cape Town, South Africa</p>
+        </div>
+    </a>
+
+    <!-- 用户动态添加的观测会自动追加在这里 -->
+</div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sky Observations | Created for University of Oulu Coursework</p>
+    </footer>
+    <script src="auth.js"></script>
+    <script src="observations.js"></script>
+</body>
+</html>

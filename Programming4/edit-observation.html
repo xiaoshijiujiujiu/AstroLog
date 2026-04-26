@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Edit Observation - AstroLog</title>
+    <link rel="stylesheet" href="add-observation.css">
+</head>
+
+<body>
+    <header>
+        <div class="Logo">AstroLog</div>
+        <nav>
+            <a href="#"> Home </a>
+            <a href="observations.html"> Observations </a>
+            <a href="#"> My Profile </a>
+            <a href="#"> About</a>
+        </nav>
+        <div id="userControls"></div>
+    </header>
+
+    <main>
+        <div class="form-container">
+            <h1>Edit Observation</h1>
+            
+            <form id="editObservationForm">
+                <div class="form-section">
+                    <h2>Basic Information</h2>
+                    
+                    <div class="form-group">
+                        <label>Object Name *</label>
+                        <input type="text" id="objectName" placeholder="e.g., Andromeda Galaxy" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Description *</label>
+                        <textarea id="description" rows="4" placeholder="Describe what you observed..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Current Image</label>
+                        <div id="currentImagePreview"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Upload New Image (optional)</label>
+                        <input type="file" id="imageUpload" accept="image/*">
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Astronomical Coordinates</h2>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Right Ascension *</label>
+                            <input type="text" id="rightAscension" placeholder="e.g., 00h 42m 44s" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Declination *</label>
+                            <input type="text" id="declination" placeholder="e.g., +41° 16' 9\"" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Observation Location</h2>
+                    
+                    <div class="form-group">
+                        <label>Location Name *</label>
+                        <input type="text" id="locationName" placeholder="e.g., Oulu, Finland" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Latitude</label>
+                            <input type="text" id="latitude" placeholder="e.g., 65.0121° N">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Longitude</label>
+                            <input type="text" id="longitude" placeholder="e.g., 25.4651° E">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Other Information</h2>
+                    
+                    <div class="form-group">
+                        <label>Weather Conditions</label>
+                        <input type="text" id="weather" placeholder="e.g., Clear, no clouds">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Equipment Used</label>
+                        <input type="text" id="equipment" placeholder="e.g., Dobsonian reflector">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Visibility</label>
+                        <select id="visibility">
+                            <option value="">Select...</option>
+                            <option value="Excellent">Excellent</option>
+                            <option value="Good">Good</option>
+                            <option value="Fair">Fair</option>
+                            <option value="Poor">Poor</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>Modification Information</h2>
+                    
+                    <div class="form-group">
+                        <label>Reason for Modification (optional)</label>
+                        <textarea id="modificationReason" rows="3" placeholder="e.g., Corrected coordinates, Updated description..."></textarea>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" onclick="window.history.back()" class="cancel-btn">Cancel</button>
+                    <button type="submit" class="submit-btn">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sky Observations | Created for University of Oulu Coursework</p>
+    </footer>
+
+    <script src="auth.js"></script>
+    <script src="edit-observation.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AstroLog - Your personal sky observation journal and astronomy tracker">
+    <title>Home - AstroLog Sky Observation</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+
+            <!-- Header -->
+            <header>
+                <div class="text">
+                    <h1>AstroLog</h1>
+                    <p>A Website for Sky Observation</p>
+                </div>
+                <div class="header-images" aria-hidden="true">
+                    <img class="header-img" id="photo3" src="imagess/in-header4.jpeg" alt="Sky observation moment">
+                    <img class="header-img" id="photo2" src="imagess/in-header.jpg" alt="Telescope view">
+                    <img class="header-img" id="photo1" src="imagess/in-header2.jpg" alt="Night sky photography">
+                    <img class="header-img" id="photo0" src="imagess/in-header3.png" alt="Constellation map">
+                </div>
+            </header>
+
+            <!-- Navigation -->
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="observations.html">Observations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="profile.html">My Profile</a>
+                    </li>
+                    <li class="nav-search">
+
+                        <input type="search" id="search-input" placeholder="Search observations..." aria-label="Search">
+                    </li>
+                    <li class="nav-item nav-item-login">
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main>
+            
+                        
+                        <!-- Cards -->
+                            <article class="card card-primary">
+                                <h2 class="card-title">What is AstroLog</h2>
+                                <p class="card-text">
+                                    This is a place for Sky lover to record their observations
+                                </p>
+                              
+                            </article>
+
+                            <article class="card card-secondary">
+                                <h2 class="card-subtitle">What you can do here?</h2>
+                                <ul class="card-text2">
+                                    <li>Recording your own observations</li>
+                                    <li>Searching observation upload by others</li>   
+                                </ul>
+                            </article>
+                        
+                
+
+                <!-- Top 5 Popular Observations -->
+                <section class="gallery-section" aria-labelledby="gallery-heading">
+                    <h2 id="gallery-heading" class="section-heading">Top 5 Most Popular Observations</h2>
+                    <div class="gallery-grid" id="popularGallery">
+                      
+                        
+                    </div>
+                </section>
+            </main>
+
+            <!-- Footer -->
+            <footer class="site-footer">
+                <p>&copy; 2026 AstroLog Sky Observations | Created for University of Oulu Coursework</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="home.js"></script>
+</body>
+
+</html>
