@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #e8e7e4;
+    padding: 20px;
+}
+
+header{
+    background-color: #2c3e50;
+    color: #FFEE70;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.Logo{
+    font-size: larger;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    gap: 10px;
+    transition: color 0.3s;
+}
+nav a:hover {
+    color: #f1f181;
+}
+
+header input{
+    flex: auto;
+    max-width: 400px;
+    padding: 4px 6px;
+    border:none;
+    border-radius: 4px;
+}
+
+header button{
+    padding: 8px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+header button:hover {
+    background: #2980b9;
+}
+
+main {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/*Observation*/
+.card-layout{
+    display:flex; 
+    gap: 30px;
+    background:white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    align-items: flex-start;
+}
+
+.image-box {
+    width: 350px;
+    height: 350px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    flex-shrink: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.text-content h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 28px;
+}
+
+.text-content h3 {
+    color: #34495e;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.text-content p {
+    color: #555;
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.text-content ul {
+    margin-left: 30px;
+    margin-bottom: 15px;
+}
+
+.text-content li {
+    color: #555;
+    margin-bottom: 5px;
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Header 用户控制区域 */
+#userControls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.welcome-text {
+    color: white;
+    font-size: 14px;
+}
+
+.logout-btn {
+    padding: 8px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.login-btn-header {
+    padding: 8px 20px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-btn-header:hover {
+    background: #2980b9;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    header input {
+        max-width: 100%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-layout {
+        flex-direction: column;
+    }
+
+    .image-box {
+        width: 100%;
+        height: 300px;
+    }
+}
