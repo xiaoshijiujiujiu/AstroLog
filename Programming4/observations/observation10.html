@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="utf-8">
+	<title>Sky Observation</title>
+	 <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+	<header>
+		<div class="Logo">AstroLog</div>
+		<nav>
+		<a href="#"> Home </a>
+		<a href="#"> Observations </a>
+		<a href="#"> My Profile </a>
+		<a href="#"> About</a>
+		</nav>
+		<input type="text" placeholder="search">
+		<div id="userControls"></div>
+
+	</header>
+
+	
+	<main>
+		<div class="card-layout">
+			<div class="image-box">
+				<img src="../image/Large Magellanic Cloud.png" alt="Large Magellanic Cloud" style="width: 100%; height: 100%; object-fit: cover;">
+			</div>
+			<section class="text-content">
+			<h1>Large Magellanic Cloud Observation</h1>
+			<h3>Observer: Sofia</h3>
+
+			<p>Observed the Large Magellanic Cloud from the southern hemisphere. 
+				It appeared as a bright cloud-like patch, rich in structure.
+			</p>
+
+			<h3>Astronomical Coordinates</h3>
+			<ul>
+				<li>Right Ascension: 05h 23m 34s</li>
+				<li>Declination:  -69&deg 45' 22"</li>
+			</ul>
+
+			<h3>Observation Location</h3>
+			<p>Location Name: Cape Town, South Africa</p>
+			<ul>
+				<li>Latitude:  33.9249&deg N</li>
+				<li>Longtitude: 18.4241&deg E</li>
+			</ul>
+
+			<h3>Other information</h3>
+			<ul>
+				<li>Weather: Clear skies</li>
+				<li>Equipment Used: Naked eye and binoculars</li>
+				<li>Visibiliry: Excellent</li>
+			</ul>
+
+
+		</section>
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Sky Observations | Created for University of Oulu Coursework</p>
+	</footer>
+
+	<script src="../auth.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const user = getCurrentUser();
+			const userControls = document.getElementById('userControls');
+ 
+			if (user) {
+				userControls.innerHTML = `
+					<span class="welcome-text">Welcome, ${user.username}!</span>
+					<button onclick="logoutUser()" class="logout-btn">Logout</button>
+				`;
+			} else {
+				userControls.innerHTML = `
+					<button onclick="window.location.href='../login.html'" class="login-btn-header">Login</button>
+				`;
+			}
+		});
+	</script>
+
+</body>
+</html>
